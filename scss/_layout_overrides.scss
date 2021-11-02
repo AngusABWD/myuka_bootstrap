@@ -1,0 +1,25 @@
+body {
+    background-image: url(../Image/vichy.jpg);
+    color: $dark;
+}
+.row {
+    margin: $marginblock;
+}
+h1 {
+    font-family: $font-title ;
+}
+.round {
+    border-radius: $round-radius;
+}
+.btn-footer {
+    font-family: $font-title;
+    font-size: x-large;
+    color: $primary;
+    background-color: $dark;
+    border: none;
+}
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
