@@ -1,42 +1,50 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-<head>
+  <head>
     <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <link rel="stylesheet" href="./css/style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>MYUKA</title>
+  </head>
 
-
-  
-
-    <title>MYUKA</title>
-
-  </head>
-  <body class="bg-primary">
+<!--définition du body par un container-->
+ <!--début du contenu-->
+  <div class="container">
+  <!--définition de la couleur des textes-->
     <div class="text-primary">
-      <div class="container">
+  
+        <!--en-tête avec le titre-->
         <div class="row">
           <div class="col text-center bg-dark shadow">
             <h1><em>My Yuka</em></h1>
             <p>Obtenez les informations sur les produits alimentaires</p>
           </div>
         </div>
+        <!--Formulaire de recherche du produit avec son EAN ( les fonctions ne sont pas définies)-->
         <div class="row">
           <div class="col bg-dark shadow ">
             <div class="row justify-content-center">
+              <!--responsive 8 et 6 colonnes afin de conserver une largeur suffisante-->
               <div class="col-8 col-md-6">
-                <input class="form-control" id="searchInput" type="text" placeholder="EAN..">
+                <!--Formulaire champ de saisie-->
+                <div class="form-group">
+                  <input class="form-control" id="searchInput" type="text" placeholder="EAN..">
+                </div>
               </div>
             </div>
+            <!--Bouton d'envoi-->
             <div class="row text-center">
               <div>
-                <button type="button" class="btn btn-success">Scanner</button>
+                <button type="submit" class="btn btn-success">Scanner</button>
               </div>
             </div>
           </div>
         </div>
+        <!--Blocks Image et Ingrédient côte à côte avec un changement responsive en médium l'un sous l'autre-->
         <div class="row">
+          <!--modification des margins afin que les blocks soit alignés à l'ensemble de la page-->
           <div class="col-12 col-md-6 text-center px-0 mb-3 mb-md-0 pe-md-2">
             <div class="h-100 bg-dark shadow center">
                 <img class="w-50 m-3"  src="./Image/frosties.jpg " alt="Photo"/>    
@@ -49,8 +57,11 @@
               <p>Maïs, Sucre, arôme de malt d'orge, sirop de glucose, sel<br />
               <br /><u>Vitamines et minéraux :</u><br />
               carbonate de calcium<br /> vitamines ( B/PP, B6, B2, B1, B9, D, B12 ), fer </p> 
-              <div class="row"><table class="w-50"> 
-                  <tr><th>Vitamines&nbspajoutées</th></tr>  
+              <!--présentation des ingrédients ajoutés sous forme de tableau-->
+              <div class="row">
+                <!--chaque tableau prendra la moitié du block-->
+                <table class="w-50"> 
+                  <tr><th>Vitamines&nbsp;ajoutées</th></tr>  
                   <tr><td>Niacine</td></tr>
                   <tr><td>Vitamine B6</td></tr>
                   <tr><td>Riboflavine</td></tr>
@@ -58,23 +69,25 @@
                   <tr><td>Acide folique</td></tr>
                   <tr><td>Vitamine D</td></tr>
                   <tr><td>Vitamine B12</td></tr>
-              </table>
+                </table>
                 <table class="w-50 h-25"> 
-                  <tr><th>Minéraux&nbspajoutés</th></tr>  
+                  <tr><th>Minéraux&nbsp;ajoutés</th></tr>  
                   <tr><td>Carbonate de calcium</td></tr>
                   <tr><td>Fer</td></tr>            
-                </table>
+                  </table>
               </div>
-
             </div>
           </div>
         </div>
+        <!--Block sur les allergène avec un bouton cliquable pour les informations-->
         <div class="row">
           <div class="col text-center bg-dark shadow p-4">
             <p><b><u>Substances ou produits provoquant des allergies ou intolérances :</u></b></p> 
             <button type="button" class="btn btn-danger px-3 my-2 round"><i class="	fa fa-exclamation-triangle me-3"></i>Gluten</button>
           </div>
         </div>
+        <!--3 block côte à côte NOVA Nutri-score et Huile de plame, ils se modifierons de façon responsive avec d'abors NOVA et Nutriscore côte à côte
+        et Huile de palme dessous pour les écran à partir de médium puis les uns en dessous des autres pour les smalls -->
         <div class="row">
           <div class="col-12 col-sm-6 col-lg-4 text-center px-0 pe-sm-2 mb-3 mb-lg-0">
             <div class="h-100 bg-dark shadow">
@@ -87,38 +100,40 @@
             </div>
           </div>
           <div class="col-12 col-lg-4 text-center px-0">
+            <!--Block Huile de palme avec boutons d'informations supplémentaires-->
             <div class="h-100 bg-dark shadow">
-              <div><button type="button" class="btn btn-success px-3 my-5 round"><i class="fa fa-leaf me-3"></i>Sans huile de palme</button></div>
-              <div><button type="button" class="btn btn-success px-3 mb-3 round"><i class="fa fa-cutlery me-3"></i>Végétarien</button></div>
+              <div><button type="button" class="btn btn-success px-3 my-5 round" title="informations supplémentaires"><i class="fa fa-leaf me-3"></i>Sans huile de palme</button></div>
+              <div><button type="button" class="btn btn-success px-3 mb-3 round" title="informations supplémentaires"><i class="fa fa-cutlery me-3"></i>Végétarien</button></div>
               <p class="p-5">L'analyse est basée uniquement sur les ingrédients listés et ne prend pas en compte les méthodes de fabrication.</p>     
             </div>
           </div>
         </div>
+        <!--Block Informations de distribution-->
         <div class="row">
           <div class="col text-center bg-dark shadow">
-            <div class="row"><div class="col-12 col-lg-4"><b>Marques&nbsp:</b>&nbspKellogg's</div><div class="col-12 col-lg-4"><b>Magasins&nbsp:</b>&nbspIntermarché, Magasin&nbspU</div><div class="col-12 col-lg-4"><b>Pays&nbspde&nbspvente&nbsp:</b>&nbspBelgique,&nbspFrance</div></div>
+            <div class="row"><div class="col-12 col-lg-4"><b>Marques&nbsp;:</b>&nbsp;Kellogg's</div><div class="col-12 col-lg-4"><b>Magasins&nbsp;:</b>&nbsp;Intermarché, Magasin&nbsp;U</div><div class="col-12 col-lg-4"><b>Pays&nbsp;de&nbsp;vente&nbsp;:</b>&nbsp;Belgique,&nbsp;France</div></div>
           </div>
         </div>
+        <!--Footer avec lien vers d'autres pages-->
         <div class="row">
           <div class="col text-center bg-dark shadow">
             <div>
-              <button type="button" class="btn-footer m-3">Crédits</button>
-              <button type="button" class="btn-footer m-3">Copyright</button>
-              <button type="button" class="btn-footer m-3">Informations&nbsplégales</button>
-              <button type="button" class="btn-footer m-3">Contact</button>
+              <a href="#" title="Crédits"><button type="button" class="btn-footer m-3">Crédits</button></a>
+              <a href="#" title="Copyright"><button type="button" class="btn-footer m-3">Copyright</button></a>
+              <a href="#" title="informations légales"><button type="button" class="btn-footer m-3">Informations&nbsp;légales</button></a>
+              <a href="#" title="Contact"><button type="button" class="btn-footer m-3">Contact</button></a>
             </div>
           </div>
         </div>
       </div>
-    </div>
-
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+     </div>
+    <!--script pour Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
-  </body>
 
 </html>
 
