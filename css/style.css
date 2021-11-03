@@ -11130,8 +11130,7 @@ h1, .h1 {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: x-large;
   color: #FEFEE0;
-  background-color: #5A3A22;
-  border: none;
+  text-decoration: none;
 }
 
 .center {

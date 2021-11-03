@@ -27,17 +27,17 @@
           <div class="col bg-dark shadow ">
             <div class="row justify-content-center">
               <!--responsive 8 et 6 colonnes afin de conserver une largeur suffisante-->
-              <div class="col-8 col-md-6">
+              <div class="col-8 col-md-6 text-center">
                 <!--Formulaire champ de saisie-->
-                <div class="form-group">
-                  <input class="form-control" id="searchInput" type="text" placeholder="EAN..">
-                </div>
-              </div>
-            </div>
-            <!--Bouton d'envoi-->
-            <div class="row text-center">
-              <div>
-                <button type="submit" class="btn btn-success">Scanner</button>
+                <form method="post" action="traitement.php">
+                  <div class="form-group m-3">
+                    <input class="form-control" id="searchInput" type="text" placeholder="EAN..">
+                  </div>      
+                  <!--Bouton d'envoi-->
+                  <div>
+                    <button type="submit" class="btn btn-success">Scanner</button>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
@@ -116,12 +116,12 @@
         </div>
         <!--Footer avec lien vers d'autres pages-->
         <div class="row">
-          <div class="col text-center bg-dark shadow">
+          <div class="col text-center bg-dark shadow p-3">
             <div>
-              <a href="#" title="Crédits"><button type="button" class="btn-footer m-3">Crédits</button></a>
-              <a href="#" title="Copyright"><button type="button" class="btn-footer m-3">Copyright</button></a>
-              <a href="#" title="informations légales"><button type="button" class="btn-footer m-3">Informations&nbsp;légales</button></a>
-              <a href="#" title="Contact"><button type="button" class="btn-footer m-3">Contact</button></a>
+              <a href="#" title="Crédits" class="btn-footer m-3">Crédits</a>
+              <a href="#" title="Copyright" class="btn-footer m-3">Copyright</a>
+              <a href="#" title="informations légales" class="btn-footer m-3">Informations&nbsp;légales</a>
+              <a href="#" title="Contact" class="btn-footer m-3">Contact</a>
             </div>
           </div>
         </div>
